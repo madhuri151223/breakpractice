@@ -11,13 +11,12 @@ pipeline {
                            "DR"
                           ]
       for (environment in environments) {
-         
+            
         if (environment=="Production"){
-          
-        echo "environment reached-stopping deployment"
-        echo "deploying to ${environment}" 
+          echo "environment reached-stopping deployment"
+   
           break
-
+ echo "deploying to ${environment}"  
         }
       }
     }
